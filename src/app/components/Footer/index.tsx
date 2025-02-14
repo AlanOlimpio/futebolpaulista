@@ -1,3 +1,3 @@
 "use client";
-import Header from "./Header";
-export default Header;
+import Footer from "./Footer";
+export default Footer;

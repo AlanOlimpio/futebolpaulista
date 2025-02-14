@@ -33,6 +33,7 @@ export const Avatar = styled(Image, {
   width: "3rem",
   height: "3rem",
   borderRadius: "50%",
+  border: "1px solid $white",
   "@bp1": {
     flex: "0 0 48px",
   },

@@ -1,14 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CustomAside, SidebarWrapper } from "./SidebarStyles";
-import { usePathname } from "next/navigation";
+import { CustomAside } from "./SidebarStyles";
 import { useSidebarStore } from "@/stores/sidebar-store-provider";
+import Menu from "../Menu";
 function Sidebar() {
   const { isOpen } = useSidebarStore((state) => state);
 
   return (
     <CustomAside isOpen={isOpen}>
-      <p>Sidebar</p>
+      <Menu />
     </CustomAside>
   );
 }

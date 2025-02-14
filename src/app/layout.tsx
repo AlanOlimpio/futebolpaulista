@@ -8,8 +8,8 @@ import { SidebarStoreProvider } from "@/stores/sidebar-store-provider";
 import Footer from "./components/Footer/Footer";
 
 export const metadata: Metadata = {
-  title: "Federação Paulista de Futebol",
-  description: "Portal de informações da Federação Paulista de Futebol",
+  title: "Futebol",
+  description: "Portal de informações de Futebol",
 };
 
 export default function RootLayout({

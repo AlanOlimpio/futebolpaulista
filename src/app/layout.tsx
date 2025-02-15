@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 import { ServerStylesheet } from "@/ServerStylesheet";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 import { Container, ContainerWrapper } from "@/styles/LayoutStyles";
 import { SidebarStoreProvider } from "@/stores/sidebar-store-provider";
-import Footer from "./components/Footer/Footer";
+import Footer from "../components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Futebol",

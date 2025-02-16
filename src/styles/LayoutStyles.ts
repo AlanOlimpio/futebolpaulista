@@ -20,4 +20,7 @@ export const MainWrapper = styled("main", {
   padding: "1.5rem 1.5rem 6.25rem",
   width: "100%",
   minHeight: "calc(100vh - 96px)",
+  "@bp2": {
+    padding: "0.8rem 0.8rem 6.875rem",
+  },
 });

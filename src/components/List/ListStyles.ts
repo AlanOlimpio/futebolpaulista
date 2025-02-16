@@ -14,6 +14,9 @@ export const WrapperTitleList = styled("div", {
   h2: {
     fontSize: "1.4rem",
   },
+  "@bp2": {
+    padding: "0.8rem",
+  },
 });
 export const ContentList = styled("div", {
   display: "grid",
@@ -24,5 +27,8 @@ export const ContentList = styled("div", {
   gridTemplateColumns: "1fr 1fr",
   "@bp1": {
     gridTemplateColumns: "1fr",
+  },
+  "@bp2": {
+    padding: "0.8rem",
   },
 });

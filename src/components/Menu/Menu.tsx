@@ -8,7 +8,6 @@ import DropdownMenu from "./DropdownMenu";
 
 function Menu() {
   const pathname = usePathname();
-  console.log(pathname);
   return (
     <MenuWrapper>
       <CustomLink isActive={pathname === "/"}>

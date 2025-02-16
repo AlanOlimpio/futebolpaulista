@@ -1,5 +1,5 @@
 "use client";
-import { useSidebarStore } from "@/stores/sidebar-store-provider";
+
 import { WrapperTitle } from "./TitleStyles";
 
 interface TitleProps {

@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { ContentList, WrapperTitleList } from "./ListStyles";
+import ModalRegister from "../ModalRegister";
 
 interface TitleProps {
   title: string;
@@ -11,6 +12,7 @@ function List({ title, children }: TitleProps) {
     <>
       <WrapperTitleList>
         <h2>{title}</h2>
+        <ModalRegister />
       </WrapperTitleList>
       <ContentList>{children}</ContentList>
     </>

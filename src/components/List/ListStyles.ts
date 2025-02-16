@@ -7,9 +7,10 @@ export const WrapperTitleList = styled("div", {
   gap: "1rem",
   justifyContent: " space-between",
   marginTop: "1rem",
-  background: "$blue300",
+  background: "$gray400",
   padding: "1.5rem",
-  color: "$white",
+  color: "$gray900",
+  alignItems: "center",
   width: "100%",
   h2: {
     fontSize: "1.4rem",

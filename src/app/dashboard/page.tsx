@@ -19,7 +19,7 @@ export default async function Page() {
           name="Alan Olimpio"
           photoPersonUrl={avatarImg}
           age="37 anos"
-          status="Casado"
+          status="Ativo"
           dateBirth="29/12/1987"
           cpf="49887987897"
           email="alancleyton.olimpio@gmail.com"
@@ -30,7 +30,7 @@ export default async function Page() {
           name="Alan Olimpio"
           photoPersonUrl={avatarImg}
           age="37 anos"
-          status="Casado"
+          status="Ativo"
           dateBirth="29/12/1987"
           cpf="49887987897"
           email="alancleyton.olimpio@gmail.com"
@@ -39,9 +39,8 @@ export default async function Page() {
         />
         <Card
           name="Alan Olimpio"
-          photoPersonUrl={avatarImg}
           age="37 anos"
-          status="Casado"
+          status="Ativo"
           dateBirth="29/12/1987"
           cpf="49887987897"
           email="alancleyton.olimpio@gmail.com"

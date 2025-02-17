@@ -1,5 +1,4 @@
 import {
-  Button,
   ContentCardProps,
   ContentImageNameProps,
   FooterCardProps,
@@ -10,8 +9,9 @@ import {
 import { AvatarIcon } from "@radix-ui/react-icons";
 
 import Image, { StaticImageData } from "next/image";
+import ModalDetails from "../ModalDetails";
 
-interface CardProps {
+export interface CardProps {
   photoPersonUrl?: string | StaticImageData;
   name: string;
   age: string;
@@ -23,51 +23,46 @@ interface CardProps {
   status?: string;
 }
 
-function Card({
-  name,
-  age,
-  cpf,
-  dateBirth,
-  email,
-  fullAddress,
-  photoPersonUrl,
-  status,
-  telephone,
-}: CardProps) {
+function Card(person: CardProps) {
   return (
     <WrapperCardProps>
       <ContentCardProps>
         <ContentImageNameProps>
-          {photoPersonUrl ? (
-            <Image src={photoPersonUrl} width={80} height={80} alt={name} />
+          {person.photoPersonUrl ? (
+            <Image
+              src={person.photoPersonUrl}
+              width={80}
+              height={80}
+              alt={person.name}
+            />
           ) : (
             <WrapperAvatarIconProps>
               <AvatarIcon width={50} height={50} />
             </WrapperAvatarIconProps>
           )}
-          <p>{age}</p>
-          {status && <p>{status}</p>}
+          <p>{person.age}</p>
+          {person.status && <p>{person.status}</p>}
         </ContentImageNameProps>
         <WrapperInfoProps>
-          <p>{name}</p>
+          <p>{person.name}</p>
           <span>
-            <strong>Data de nacimento:</strong> {dateBirth}
+            <strong>Data de nacimento:</strong> {person.dateBirth}
           </span>
           <span>
-            <strong>CPF:</strong> {cpf}
+            <strong>CPF:</strong> {person.cpf}
           </span>
           <span>
-            <strong>E-mail:</strong> {email}
+            <strong>E-mail:</strong> {person.email}
           </span>
           <span>
-            <strong>Endereço:</strong> {fullAddress}
+            <strong>Endereço:</strong> {person.fullAddress}
           </span>
           <span>
-            <strong>Telefone:</strong> {telephone}
+            <strong>Telefone:</strong> {person.telephone}
           </span>
         </WrapperInfoProps>
         <FooterCardProps>
-          <Button>Cadastro completo</Button>
+          <ModalDetails {...person} />
         </FooterCardProps>
       </ContentCardProps>
     </WrapperCardProps>

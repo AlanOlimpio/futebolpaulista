@@ -1,11 +1,12 @@
 "use client";
 
+import TitlePage from "@/components/TitlePage";
 import { MainWrapper } from "@/styles/LayoutStyles";
 
 export default function Home() {
   return (
     <MainWrapper>
-      <div>Main</div>
+      <TitlePage title="Home" />
     </MainWrapper>
   );
 }
